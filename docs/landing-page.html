@@ -1,49 +1,56 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Takeform</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-900 flex flex-col items-center px-4 py-12 min-h-screen">
+  <h1 class="text-4xl md:text-6xl font-bold text-center mb-4">Takeform</h1>
+  <p class="text-lg md:text-xl text-center max-w-2xl mb-8">
+    AI-powered 2D to 3D construction takeoffs. Upload architectural renderings and get fast, accurate quantity estimates and 3D previews.
+  </p>
 
-export default function LandingPage() {
-  return (
-    <main className="min-h-screen bg-white text-gray-900 flex flex-col items-center px-4 py-12">
-      <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">Takeform</h1>
-      <p className="text-lg md:text-xl text-center max-w-2xl mb-8">
-        AI-powered 2D to 3D construction takeoffs. Upload architectural renderings and get fast, accurate quantity estimates and 3D previews.
-      </p>
+  <button class="mb-12 text-lg px-6 py-4 rounded-2xl shadow-md bg-blue-600 text-white">
+    Join the Waitlist
+  </button>
 
-      <Button className="mb-12 text-lg px-6 py-4 rounded-2xl shadow-md">
-        Join the Waitlist
-      </Button>
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
+    <div class="rounded-2xl shadow-sm p-4 border">
+      <div class="mb-2">
+        <i data-lucide="check-circle" class="text-blue-600" style="width:28px;height:28px;"></i>
+      </div>
+      <h2 class="text-xl font-semibold mb-1">Upload 2D Renderings</h2>
+      <p class="text-gray-600 text-sm">PDFs or scans — even hand-drawn plans. Takeform reads them all.</p>
+    </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
-        <Card className="rounded-2xl shadow-sm p-4">
-          <CardContent>
-            <CheckCircle className="text-blue-600 mb-2" size={28} />
-            <h2 className="text-xl font-semibold mb-1">Upload 2D Renderings</h2>
-            <p className="text-gray-600 text-sm">PDFs or scans — even hand-drawn plans. Takeform reads them all.</p>
-          </CardContent>
-        </Card>
+    <div class="rounded-2xl shadow-sm p-4 border">
+      <div class="mb-2">
+        <i data-lucide="check-circle" class="text-blue-600" style="width:28px;height:28px;"></i>
+      </div>
+      <h2 class="text-xl font-semibold mb-1">Instant 3D Models</h2>
+      <p class="text-gray-600 text-sm">Preview your layout in 3D to spot design issues early and visualize your build.</p>
+    </div>
 
-        <Card className="rounded-2xl shadow-sm p-4">
-          <CardContent>
-            <CheckCircle className="text-blue-600 mb-2" size={28} />
-            <h2 className="text-xl font-semibold mb-1">Instant 3D Models</h2>
-            <p className="text-gray-600 text-sm">Preview your layout in 3D to spot design issues early and visualize your build.</p>
-          </CardContent>
-        </Card>
+    <div class="rounded-2xl shadow-sm p-4 border">
+      <div class="mb-2">
+        <i data-lucide="check-circle" class="text-blue-600" style="width:28px;height:28px;"></i>
+      </div>
+      <h2 class="text-xl font-semibold mb-1">Accurate Takeoffs</h2>
+      <p class="text-gray-600 text-sm">Automatically count windows, doors, walls, and materials — export to CSV.</p>
+    </div>
+  </section>
 
-        <Card className="rounded-2xl shadow-sm p-4">
-          <CardContent>
-            <CheckCircle className="text-blue-600 mb-2" size={28} />
-            <h2 className="text-xl font-semibold mb-1">Accurate Takeoffs</h2>
-            <p className="text-gray-600 text-sm">Automatically count windows, doors, walls, and materials — export to CSV.</p>
-          </CardContent>
-        </Card>
-      </section>
+  <footer class="mt-16 text-sm text-gray-400">
+    &copy; <span id="year"></span> Takeform. All rights reserved.
+  </footer>
 
-      <footer className="mt-16 text-sm text-gray-400">
-        &copy; {new Date().getFullYear()} Takeform. All rights reserved.
-      </footer>
-    </main>
-  );
-}
+  <script>
+    lucide.createIcons();
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
