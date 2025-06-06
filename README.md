@@ -4,6 +4,7 @@ Quality Takeoff SAAS
 # Current MVP 
 🚀 Takeform MVP 
 🎯 Core Function:
+
 Transform 2D architectural renderings (PDFs or image scans) into:
 
 3D visualizations
