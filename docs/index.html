@@ -15,6 +15,7 @@
 
   <form id="waitlist-form" class="flex flex-col items-center w-full max-w-md mb-12">
     <input type="email" name="email" placeholder="Enter your email" required class="w-full p-3 border border-gray-300 rounded-xl mb-4" />
+    <textarea name="comment" placeholder="Optional comment or question" class="w-full p-3 border border-gray-300 rounded-xl mb-4"></textarea>
     <button type="submit" class="text-lg px-6 py-4 rounded-2xl shadow-md bg-blue-600 text-white w-full">
       Join the Waitlist
     </button>
@@ -59,20 +60,22 @@
     document.getElementById("waitlist-form").addEventListener("submit", async function(event) {
       event.preventDefault();
       const email = event.target.email.value;
+      const comment = event.target.comment.value;
       const scriptURL = "https://script.google.com/macros/s/AKfycbxkYnAUIGLk4c63ZKDzHAVVaSQ8drjHMv0ax1vWikVTuMrKQaPgLd4bKel4HT-0kmshuA/exec";
 
       try {
         await fetch(scriptURL, {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams({ email })
+          body: new URLSearchParams({ email, comment })
         });
         document.getElementById("status-message").classList.remove("hidden");
         event.target.reset();
       } catch (error) {
-        alert("There was an issue submitting your email. Please try again later.");
+        alert("There was an issue submitting your info. Please try again later.");
       }
     });
   </script>
 </body>
 </html>
+
