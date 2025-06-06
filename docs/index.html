@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -59,10 +59,10 @@
     document.getElementById("waitlist-form").addEventListener("submit", async function(event) {
       event.preventDefault();
       const email = event.target.email.value;
-      const formURL = "https://docs.google.com/forms/u/0/d/18zMVA86E03Qr3yERF98O71HqUE8q7HsXs-Yc8kuzVaE/previewResponse"; // Replace with your Google Form action URL
+      const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSfL5h7lyPzk2RPjPyLKcMEnVVL1m5k3_AipDCfl4T0QUQErRQ/formResponse";
 
       const formData = new FormData();
-      formData.append("entry.1414452707", email); // Replace entry ID with your form's input ID
+      formData.append("entry.1530431518", email);
 
       try {
         await fetch(formURL, {
