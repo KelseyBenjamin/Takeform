@@ -15,14 +15,21 @@ Transform 2D architectural renderings (PDFs or image scans) into:
 
 🔹 MVP Features (Version 0.1)
 Feature	Description
+
 ✅ User Upload	Upload PDFs or image files of 2D drawings
+
 ✅ AI Detection Engine	Auto-detects common elements (walls, windows, doors) using computer vision
+
 ✅ 3D Model Preview	Basic 3D visualization generated from 2D layout
+
 ✅ Takeoff Report Export	CSV or Excel file with estimated quantities
+
 ✅ User Accounts	Sign up/login to save projects and results
+
 ✅ Project Storage	Save drawings, models, and reports in the cloud
 
 🧠 Suggested Tech Stack (for Web App MVP)
+
 🔹 Frontend (Web UI)
 Tech	Use
 React.js	Build the user interface
