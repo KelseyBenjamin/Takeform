@@ -13,7 +13,7 @@ Transform 2D architectural renderings (PDFs or image scans) into:
 * Automated quantity takeoffs (e.g., number of windows, sq ft of drywall, doors)
 
 
-🔹 MVP Features (Version 0.1)
+# 🔹 MVP Features (Version 0.1)
 Feature	Description
 
 ✅ User Upload	Upload PDFs or image files of 2D drawings
