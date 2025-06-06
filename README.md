@@ -2,7 +2,7 @@
 Quality Takeoff SAAS
 
 # Current MVP 
-🚀 Takeform MVP (Minimum Viable Product)
+🚀 Takeform MVP 
 🎯 Core Function:
 Transform 2D architectural renderings (PDFs or image scans) into:
 
